@@ -4,18 +4,18 @@ def nyc_pigeon_organizer(data)
   data.each do |key, values|
     values.each do |detail_key, detail_values|
       detail_values.each do |name|
-  #      if new_hash.has_key? item
-  #        if new_hash[item].has_key?(key)
-  #          new_hash[item][key] << detail.key
-  #        else
-  #          new_hash[item][key] = []
-  #          new_hash[item][key] << detail.key
-  #        end
-  #      else
-  #        new_hash[item] = {}
-  #        new_hash[item][key] = []
-  #        new_hash[item][key] << detail.key
-  #      end
+        if new_hash.has_key? name
+          if new_hash[name].has_key?(key)
+            new_hash[name][key] << detail.key
+          else
+            new_hash[name][key] = []
+            new_hash[new][key] << detail.key
+          end
+        else
+          new_hash[name] = {}
+          new_hash[name][key] = []
+          new_hash[name][key] << detail.key
+        end
       end
     end
   end
