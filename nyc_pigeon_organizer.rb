@@ -16,9 +16,9 @@ def nyc_pigeon_organizer(data)
           new_hash[name][key] = []
           new_hash[name][key] << detail_key
         end
-        puts "new_hash = #{new_hash}"
       end
     end
   end
+  puts "new_hash = #{new_hash}"
   new_hash
 end
