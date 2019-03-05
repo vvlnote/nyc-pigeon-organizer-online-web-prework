@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
     values.each do |detail_key, detail_values|
       detail_values.each do |name|
         puts "key = #{key}, values = #{values}"
-        puts "detail_key = #{detail_key}, detail_values = #{detail_values}"
+        #puts "detail_key = #{detail_key}, detail_values = #{detail_values}"
         if new_hash.has_key? name
           if new_hash[name].has_key?(key)
             new_hash[name][key] << detail_key
