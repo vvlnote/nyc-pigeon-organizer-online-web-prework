@@ -7,15 +7,15 @@ def nyc_pigeon_organizer(data)
       detail_values.each do |name|
         if new_hash.has_key? name
           if new_hash[name].has_key?(key)
-            new_hash[name][key] << detail_key
+            new_hash[name][key] << detail_key.to_s
           else
             new_hash[name][key] = []
-            new_hash[name][key] << detail_key
+            new_hash[name][key] << detail_key.to_s
           end
         else
           new_hash[name] = {}
           new_hash[name][key] = []
-          new_hash[name][key] << detail_key
+          new_hash[name][key] << detail_key.to_s
         end
       end
     end
