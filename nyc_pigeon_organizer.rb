@@ -1,7 +1,6 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
   new_hash = {}
-  puts "data = #{data}"
   data.each do |key, values|
     values.each do |detail_key, detail_values|
       detail_values.each do |name|
